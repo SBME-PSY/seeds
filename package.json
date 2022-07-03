@@ -1,0 +1,25 @@
+{
+  "name": "seeds",
+  "version": "1.0.0",
+  "description": "A Package for seeding the database with fake data",
+  "main": "app.js",
+  "scripts": {
+    "start": "cd src && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBME-PSY/seeds.git"
+  },
+  "keywords": [
+    "seeds"
+  ],
+  "author": "Ramadan Ibrahem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SBME-PSY/seeds/issues"
+  },
+  "homepage": "https://github.com/SBME-PSY/seeds#readme",
+  "dependencies": {
+    "@faker-js/faker": "^7.3.0"
+  }
+}
