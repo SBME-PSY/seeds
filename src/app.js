@@ -25,10 +25,10 @@ const importData = async (file) => {
   try {
     if (file === 'all') {
       Object.entries(data).forEach(async ([model, documents]) => {
-        insertMany(model, documents).then(console.log);
+        insertMany(model, documents);
       });
     } else {
-      insertMany(data[file][0], data[file][1]).then(console.log);
+      insertMany(data[file][0], data[file][1]);
     }
   } catch (err) {
     console.error(err);
