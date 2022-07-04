@@ -13,7 +13,7 @@ for (let i = 0; i < process.argv[3]; i++) {
     role: 'user',
     password: faker.phone.number('!@ABCabc########'),
     phone: faker.phone.number('010########'),
-    age: Math.floor(Math.random() * 60) + 18,
+    age: Math.floor(Math.random() * (60 - 18)) + 18,
     maritalStatus: faker.helpers.arrayElement([
       'Single',
       'Married',
