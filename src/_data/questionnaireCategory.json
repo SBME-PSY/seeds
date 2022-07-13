@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "62bf899916bcf6d1f239162d",
+    "name": {
+      "en": "Depression",
+      "ar": "الإكتئاب"
+    },
+    "picture": "/static/questionnaires/category/depression.png"
+  },
+  {
+    "_id": "62c00aa6e3062cc3e80f15f8",
+    "name": {
+      "en": "Anxiety",
+      "ar": "القلق"
+    },
+    "picture": "/static/questionnaires/category/anixiety.png"
+  },
+  {
+    "_id": "62c00aa6e3062cc3e80f15f9",
+    "name": {
+      "en": "Stress",
+      "ar": "الضغط العصبي"
+    },
+    "picture": "/static/questionnaires/category/stress.png"
+  },
+  {
+    "_id": "62c00aa6e3062cc3e80f15fa",
+    "name": {
+      "en": "Cycloid Temperament",
+      "ar": "التقلب المزاجي"
+    },
+    "picture": "/static/questionnaires/category/cycloid-temperment.png"
+  },
+  {
+    "_id": "62c00aa6e3062cc3e80f15fb",
+    "name": {
+      "en": "General Activity",
+      "ar": "النشاط العام"
+    },
+    "picture": "/static/questionnaires/category/general-activity.png"
+  }
+]
