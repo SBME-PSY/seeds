@@ -1,13 +1,18 @@
 const { faker } = require('@faker-js/faker');
 const fs = require('fs');
+const governorates = require('./_data/governorates');
 
 data = JSON.parse(
   Buffer.from(fs.readFileSync(`_data/${process.argv[2]}.json`)).toString(),
 );
 
+const ids = [];
+
 for (let i = 0; i < process.argv[3]; i++) {
+  const id = faker.database.mongodbObjectId();
+  ids.push(id);
   const user = {
-    _id: faker.database.mongodbObjectId(),
+    _id: id,
     name: faker.name.findName(),
     email: faker.internet.email(),
     role: 'user',
@@ -23,6 +28,7 @@ for (let i = 0; i < process.argv[3]; i++) {
       'Engaged',
     ]),
     sex: faker.helpers.arrayElement(['Male', 'Female']),
+    governorate: faker.helpers.arrayElement(governorates),
     picture: faker.image.avatar(),
     createdAt: faker.date.past(),
     updatedAt: faker.date.recent(),
@@ -32,5 +38,9 @@ for (let i = 0; i < process.argv[3]; i++) {
 }
 
 fs.writeFileSync(`_data/${process.argv[2]}.json`, JSON.stringify(data), {
+  encoding: 'utf8',
+});
+
+fs.writeFileSync(`_data/user_ids.json`, JSON.stringify(ids), {
   encoding: 'utf8',
 });
